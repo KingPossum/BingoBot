@@ -7,13 +7,9 @@ from textgenrnn import textgenrnn
 
 translator = Translator()
 
-with open("C:\\Users\\Reed\\Desktop\\bingo bot\\token.txt", "r") as f:
-    key = f.readlines()[0]
-    
-token = key
-#to be re-enabled upon bot deployment
-#load_dotenv()
-#token = os.getenv('DISCORD_TOKEN') 
+
+load_dotenv()
+token = os.getenv('DISCORD_TOKEN') 
 
 client = discord.Client()
 
